@@ -3333,8 +3333,8 @@
 
     .effect-zoom-in .content-image.preview-hover,
     .effect-zoom-in .content-image:hover {
-      -webkit-transform: scale(1.05);
-      transform: scale(1.05)
+      -webkit-transform: scale(1.05) !important;
+      transform: scale(1.05) !important
     }
 
     .effect-shine .content-image {
@@ -4614,6 +4614,12 @@
       outline-color: rgba(255, 255, 255, 1)
     }
 
+    .background-id_0 .kv-main a:hover,
+    .background-id_0 a:hover,
+    .background-id_0adjacent a:hover {
+      background-color: rgba(81, 171, 255, .1)
+    }
+
     .background-id_808080m16 .kv-main a:focus {
       text-shadow: 0 1px 3px rgba(0, 0, 0, .364);
       outline-color: rgba(255, 255, 255, 1)
@@ -5054,16 +5060,21 @@
       color: rgba(81, 171, 255, 1)
     }
 
-    .background-id_0 .button-ghost-quaternary.button-background,
     .background-id_0 .button-ghost-quaternary.button-card {
       box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
-      color: rgba(81, 171, 255, 1);
-      text-shadow: none
+      text-shadow: none;
+      color: rgba(81, 171, 255, 1)
     }
 
     .background-id_0 .button-ghost-quaternary.button-card:focus,
     .background-id_0 .button-ghost-quaternary.button-card:hover {
       box-shadow: inset 0 0 0 4px rgba(0, 132, 255, 1);
+      text-shadow: none;
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0 .button-ghost-quaternary.button-background {
+      box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
       text-shadow: none;
       color: rgba(81, 171, 255, 1)
     }
@@ -5085,10 +5096,15 @@
       color: rgba(81, 171, 255, 1)
     }
 
-    .background-id_0 a:hover {
+    .background-id_0 .default-card,
+    .background-id_0 .kv-main a:hover,
+    .background-id_0 a:hover,
+    .background-id_0adjacent .kv-content,
+    .background-id_0adjacent .section-title.on_card,
+    .background-id_0adjacent .text1,
+    .background-id_0adjacent pre {
       color: rgba(255, 255, 255, 1);
-      text-shadow: none;
-      background-color: rgba(81, 171, 255, .1)
+      text-shadow: none
     }
 
     .background-id_0 a:focus {
@@ -5099,17 +5115,6 @@
     .background-id_0 .kv-main a {
       text-shadow: none;
       color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0 .kv-main a:hover {
-      color: rgba(255, 255, 255, 1);
-      text-shadow: none;
-      background-color: rgba(81, 171, 255, .1)
-    }
-
-    .background-id_0m20 .kv-main a:hover,
-    .background-id_0m20 a:hover {
-      background-color: rgba(255, 255, 255, .1)
     }
 
     .background-id_0 .kv-main a:focus {
@@ -5134,9 +5139,7 @@
     }
 
     .background-id_0 .default-card {
-      background-color: rgba(17, 17, 17, 1);
-      text-shadow: none;
-      color: rgba(255, 255, 255, 1)
+      background-color: rgba(17, 17, 17, 1)
     }
 
     .background-id_0 .ee-select-box .ee-select-box-innerwrapper {
@@ -5171,522 +5174,9 @@
       border-color: rgba(64, 19, 105, 1)
     }
 
-    .background-id_0m20 .kv-content,
-    .background-id_0m20 .text1 {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .section-title,
-    .background-id_0m20 pre {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .section-title.on_card {
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .section-title.on_background {
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .section-title.on_accent1,
-    .background-id_0m20 .section-title.on_accent2 {
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .section-subtitle {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .section-subtitle.on_card {
-      color: rgba(0, 0, 0, 1)
-    }
-
-    .background-id_0m20 .section-subtitle.on_accent1,
-    .background-id_0m20 .section-subtitle.on_accent2,
-    .background-id_0m20 .section-subtitle.on_background {
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .section-description {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .custom-text-cl1,
-    .background-id_0m20 .section-description.on_card {
-      color: rgba(0, 0, 0, 1)
-    }
-
-    .background-id_0m20 .section-description.on_accent1,
-    .background-id_0m20 .section-description.on_accent2,
-    .background-id_0m20 .section-description.on_background {
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .custom-text-cl2 {
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .custom-text-cl3 {
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .custom-text-cl4 {
-      color: rgba(0, 132, 255, 1)
-    }
-
-    .background-id_0m20 .custom-border-cl1 {
-      border-color: rgba(0, 0, 0, 1);
-      background-color: rgba(0, 0, 0, 1)
-    }
-
-    .background-id_0m20 .custom-border-cl2 {
-      border-color: rgba(255, 255, 255, 1);
-      background-color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .custom-border-cl3 {
-      border-color: rgba(64, 19, 105, 1);
-      background-color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .custom-border-cl4 {
-      border-color: rgba(0, 132, 255, 1);
-      background-color: rgba(0, 132, 255, 1)
-    }
-
-    .background-id_0m20 .button-primary {
-      background-color: rgba(64, 19, 105, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-primary:focus,
-    .background-id_0m20 .button-primary:hover {
-      background-color: rgba(90, 26, 148, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-primary.button-background,
-    .background-id_0m20 .button-primary.button-card {
-      background-color: rgba(64, 19, 105, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-primary.button-card:focus,
-    .background-id_0m20 .button-primary.button-card:hover {
-      background-color: rgba(90, 26, 148, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-primary.button-background:focus,
-    .background-id_0m20 .button-primary.button-background:hover {
-      background-color: rgba(90, 26, 148, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-secondary {
-      background-color: rgba(0, 132, 255, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-secondary:focus,
-    .background-id_0m20 .button-secondary:hover {
-      background-color: rgba(50, 156, 255, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-secondary.button-background,
-    .background-id_0m20 .button-secondary.button-card {
-      background-color: rgba(0, 132, 255, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-secondary.button-card:focus,
-    .background-id_0m20 .button-secondary.button-card:hover {
-      background-color: rgba(50, 156, 255, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-tertiary,
-    .background-id_0m20 .button-tertiary:focus,
-    .background-id_0m20 .button-tertiary:hover {
-      background-color: rgba(255, 255, 255, 1);
-      color: rgba(0, 0, 0, 1)
-    }
-
-    .background-id_0m20 .button-secondary.button-background:focus,
-    .background-id_0m20 .button-secondary.button-background:hover {
-      background-color: rgba(50, 156, 255, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-tertiary.button-card {
-      background-color: rgba(0, 0, 0, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-tertiary.button-card:focus,
-    .background-id_0m20 .button-tertiary.button-card:hover {
-      background-color: rgba(25, 25, 25, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-tertiary.button-background,
-    .background-id_0m20 .button-tertiary.button-background:focus,
-    .background-id_0m20 .button-tertiary.button-background:hover {
-      background-color: rgba(255, 255, 255, 1);
-      color: rgba(0, 0, 0, 1)
-    }
-
-    .background-id_0m20 .button-quaternary {
-      background-color: rgba(64, 19, 105, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-quaternary:focus,
-    .background-id_0m20 .button-quaternary:hover {
-      background-color: rgba(90, 26, 148, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-quaternary.button-background,
-    .background-id_0m20 .button-quaternary.button-card {
-      background-color: rgba(64, 19, 105, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-quaternary.button-card:focus,
-    .background-id_0m20 .button-quaternary.button-card:hover {
-      background-color: rgba(90, 26, 148, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-quaternary.button-background:focus,
-    .background-id_0m20 .button-quaternary.button-background:hover {
-      background-color: rgba(90, 26, 148, 1);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-primary {
-      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-primary:focus,
-    .background-id_0m20 .button-ghost-primary:hover {
-      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-primary.button-card {
-      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-primary.button-card:focus,
-    .background-id_0m20 .button-ghost-primary.button-card:hover {
-      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-primary.button-background {
-      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-primary.button-background:focus,
-    .background-id_0m20 .button-ghost-primary.button-background:hover {
-      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-secondary {
-      box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-secondary:focus,
-    .background-id_0m20 .button-ghost-secondary:hover {
-      box-shadow: inset 0 0 0 4px rgba(0, 132, 255, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-secondary.button-card {
-      box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-secondary.button-card:focus,
-    .background-id_0m20 .button-ghost-secondary.button-card:hover {
-      box-shadow: inset 0 0 0 4px rgba(0, 132, 255, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-secondary.button-background {
-      box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-secondary.button-background:focus,
-    .background-id_0m20 .button-ghost-secondary.button-background:hover {
-      box-shadow: inset 0 0 0 4px rgba(0, 132, 255, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-tertiary {
-      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-tertiary:focus,
-    .background-id_0m20 .button-ghost-tertiary:hover {
-      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-tertiary.button-card {
-      box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-tertiary.button-card:focus,
-    .background-id_0m20 .button-ghost-tertiary.button-card:hover {
-      box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-tertiary.button-background {
-      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-quaternary,
-    .background-id_0m20 .kv-main a,
-    .background-id_0m20 .kv-main a:hover,
-    .background-id_0m20 a,
-    .background-id_0m20 a:hover {
-      color: rgba(255, 255, 255, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7)
-    }
-
-    .background-id_0m20 .button-ghost-tertiary.button-background:focus,
-    .background-id_0m20 .button-ghost-tertiary.button-background:hover {
-      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-quaternary {
-      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-quaternary:focus,
-    .background-id_0m20 .button-ghost-quaternary:hover {
-      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-quaternary.button-card {
-      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-quaternary.button-card:focus,
-    .background-id_0m20 .button-ghost-quaternary.button-card:hover {
-      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .button-ghost-quaternary.button-background {
-      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .button-ghost-quaternary.button-background:focus,
-    .background-id_0m20 .button-ghost-quaternary.button-background:hover {
-      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
-      color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0m20 .color-stroke.text2 {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      stroke: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 a:focus {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      outline-color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .kv-main a:focus {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      outline-color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .kv-main .card a,
-    .background-id_0m20 .kv-main .content-card a,
-    .background-id_0m20 .kv-main .default-card a,
-    .background-id_0m20 .kv-main .item-card a {
-      color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .kv-main .card a:hover,
-    .background-id_0m20 .kv-main .content-card a:hover,
-    .background-id_0m20 .kv-main .default-card a:hover,
-    .background-id_0m20 .kv-main .item-card a:hover {
-      color: rgba(37, 11, 61, 1)
-    }
-
-    .background-id_0m20 .default-card {
-      background-color: rgba(255, 255, 255, 1);
-      color: rgba(0, 0, 0, 1)
-    }
-
-    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper {
-      background-color: rgba(0, 0, 0, 1);
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper .select-box-dropdown-container {
-      background: rgba(0, 0, 0, 1)
-    }
-
-    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper .select-box-dropdown-container li.ee-active-element,
-    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper .select-box-dropdown-container li:hover {
-      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-      background-color: rgba(255, 255, 255, .08)
-    }
-
-    .background-id_0m20 .kv-image-border-primary {
-      border-color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0m20 .kv-image-border-secondary {
-      border-color: rgba(0, 132, 255, 1)
-    }
-
-    .background-id_0m20 .kv-image-border-tertiary {
-      border-color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0m20 .kv-image-border-quarternary {
-      border-color: rgba(64, 19, 105, 1)
-    }
-
-    .background-id_0adjacent .text1,
-    .background-id_0m20 .button-ghost-primary.button-background,
-    .background-id_0m20 .button-ghost-primary.button-background:focus,
-    .background-id_0m20 .button-ghost-primary.button-background:hover,
-    .background-id_0m20 .button-ghost-primary.button-card,
-    .background-id_0m20 .button-ghost-primary.button-card:focus,
-    .background-id_0m20 .button-ghost-primary.button-card:hover,
-    .background-id_0m20 .button-ghost-quaternary.button-background,
-    .background-id_0m20 .button-ghost-quaternary.button-background:focus,
-    .background-id_0m20 .button-ghost-quaternary.button-background:hover,
-    .background-id_0m20 .button-ghost-quaternary.button-card,
-    .background-id_0m20 .button-ghost-quaternary.button-card:focus,
-    .background-id_0m20 .button-ghost-quaternary.button-card:hover,
-    .background-id_0m20 .button-ghost-secondary.button-background,
-    .background-id_0m20 .button-ghost-secondary.button-background:focus,
-    .background-id_0m20 .button-ghost-secondary.button-background:hover,
-    .background-id_0m20 .button-ghost-secondary.button-card,
-    .background-id_0m20 .button-ghost-secondary.button-card:focus,
-    .background-id_0m20 .button-ghost-secondary.button-card:hover,
-    .background-id_0m20 .button-ghost-tertiary.button-background,
-    .background-id_0m20 .button-ghost-tertiary.button-background:focus,
-    .background-id_0m20 .button-ghost-tertiary.button-background:hover,
-    .background-id_0m20 .button-ghost-tertiary.button-card,
-    .background-id_0m20 .button-ghost-tertiary.button-card:focus,
-    .background-id_0m20 .button-ghost-tertiary.button-card:hover,
-    .background-id_0m20 .button-primary,
-    .background-id_0m20 .button-primary.button-background,
-    .background-id_0m20 .button-primary.button-background:focus,
-    .background-id_0m20 .button-primary.button-background:hover,
-    .background-id_0m20 .button-primary.button-card,
-    .background-id_0m20 .button-primary.button-card:focus,
-    .background-id_0m20 .button-primary.button-card:hover,
-    .background-id_0m20 .button-primary:focus,
-    .background-id_0m20 .button-primary:hover,
-    .background-id_0m20 .button-quaternary,
-    .background-id_0m20 .button-quaternary.button-background,
-    .background-id_0m20 .button-quaternary.button-background:focus,
-    .background-id_0m20 .button-quaternary.button-background:hover,
-    .background-id_0m20 .button-quaternary.button-card,
-    .background-id_0m20 .button-quaternary.button-card:focus,
-    .background-id_0m20 .button-quaternary.button-card:hover,
-    .background-id_0m20 .button-quaternary:focus,
-    .background-id_0m20 .button-quaternary:hover,
-    .background-id_0m20 .button-secondary,
-    .background-id_0m20 .button-secondary.button-background,
-    .background-id_0m20 .button-secondary.button-background:focus,
-    .background-id_0m20 .button-secondary.button-background:hover,
-    .background-id_0m20 .button-secondary.button-card,
-    .background-id_0m20 .button-secondary.button-card:focus,
-    .background-id_0m20 .button-secondary.button-card:hover,
-    .background-id_0m20 .button-secondary:focus,
-    .background-id_0m20 .button-secondary:hover,
-    .background-id_0m20 .button-tertiary,
-    .background-id_0m20 .button-tertiary.button-background,
-    .background-id_0m20 .button-tertiary.button-background:focus,
-    .background-id_0m20 .button-tertiary.button-background:hover,
-    .background-id_0m20 .button-tertiary.button-card,
-    .background-id_0m20 .button-tertiary.button-card:focus,
-    .background-id_0m20 .button-tertiary.button-card:hover,
-    .background-id_0m20 .button-tertiary:focus,
-    .background-id_0m20 .button-tertiary:hover,
-    .background-id_0m20 .default-card,
-    .background-id_0m20 .kv-main .card a,
-    .background-id_0m20 .kv-main .card a:hover,
-    .background-id_0m20 .kv-main .content-card a,
-    .background-id_0m20 .kv-main .content-card a:hover,
-    .background-id_0m20 .kv-main .default-card a,
-    .background-id_0m20 .kv-main .default-card a:hover,
-    .background-id_0m20 .kv-main .item-card a,
-    .background-id_0m20 .kv-main .item-card a:hover,
-    .background-id_0m20 .section-description.on_accent1,
-    .background-id_0m20 .section-description.on_accent2,
-    .background-id_0m20 .section-description.on_background,
-    .background-id_0m20 .section-description.on_card,
-    .background-id_0m20 .section-subtitle.on_accent1,
-    .background-id_0m20 .section-subtitle.on_accent2,
-    .background-id_0m20 .section-subtitle.on_background,
-    .background-id_0m20 .section-subtitle.on_card,
-    .background-id_0m20 .section-title.on_accent1,
-    .background-id_0m20 .section-title.on_accent2,
-    .background-id_0m20 .section-title.on_background,
-    .background-id_0m20 .section-title.on_card {
-      text-shadow: none
-    }
-
-    .background-id_0adjacent .text1 {
-      color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0adjacent .kv-content,
-    .background-id_0adjacent pre {
-      text-shadow: none;
-      color: rgba(255, 255, 255, 1)
-    }
-
     .background-id_0adjacent .section-title {
       text-shadow: none;
       color: rgba(81, 171, 255, 1)
-    }
-
-    .background-id_0adjacent .section-title.on_card {
-      text-shadow: none;
-      color: rgba(255, 255, 255, 1)
     }
 
     .background-id_0adjacent .section-title.on_background {
@@ -5756,11 +5246,6 @@
       background-color: rgba(255, 255, 255, 1)
     }
 
-    .background-id_808080m16.lahuni82 .menu-open nav ul li a::after,
-    .background-id_808080m16.lahuni82 .no-cover.menu-open .kv-scrolled nav ul li a::after {
-      background-color: rgba(64, 19, 105, 1)
-    }
-
     .background-id_0adjacent .custom-border-cl3 {
       border-color: rgba(64, 19, 105, 1);
       background-color: rgba(64, 19, 105, 1)
@@ -5814,9 +5299,9 @@
     .background-id_0adjacent .button-secondary.button-card:hover,
     .background-id_0adjacent .button-secondary:focus,
     .background-id_0adjacent .button-secondary:hover {
+      background-color: rgba(255, 255, 255, 1);
       color: rgba(0, 0, 0, 1);
-      text-shadow: none;
-      background-color: rgba(255, 255, 255, 1)
+      text-shadow: none
     }
 
     .background-id_0adjacent .button-tertiary {
@@ -6050,8 +5535,7 @@
 
     .background-id_0adjacent a:hover {
       color: rgba(255, 255, 255, 1);
-      text-shadow: none;
-      background-color: rgba(81, 171, 255, .1)
+      text-shadow: none
     }
 
     .background-id_0adjacent a:focus {
@@ -6103,11 +5587,6 @@
       color: rgba(255, 255, 255, 1)
     }
 
-    .background-id_0adjacent.bajigu78 .subfooter,
-    .background-id_808080m16.lahuni82 .has-cover .navigation-position.kv-check-scroll.kv-scrolled {
-      background-color: rgba(0, 0, 0, 1)
-    }
-
     .background-id_0adjacent .ee-select-box .ee-select-box-innerwrapper .select-box-dropdown-container {
       background: rgba(24, 24, 24, 1)
     }
@@ -6129,6 +5608,539 @@
     .background-id_0adjacent .kv-image-border-quarternary,
     .background-id_0adjacent .kv-image-border-tertiary {
       border-color: rgba(0, 132, 255, 1)
+    }
+
+    .background-id_0m20 .kv-content,
+    .background-id_0m20 .text1 {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .section-title,
+    .background-id_0m20 pre {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .section-title.on_card {
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .section-title.on_background {
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .section-title.on_accent1,
+    .background-id_0m20 .section-title.on_accent2 {
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .section-subtitle {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .section-subtitle.on_card {
+      color: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .section-subtitle.on_accent1,
+    .background-id_0m20 .section-subtitle.on_accent2,
+    .background-id_0m20 .section-subtitle.on_background {
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .section-description {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .custom-text-cl1,
+    .background-id_0m20 .section-description.on_card {
+      color: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .section-description.on_accent1,
+    .background-id_0m20 .section-description.on_accent2,
+    .background-id_0m20 .section-description.on_background {
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .custom-text-cl2 {
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .custom-text-cl3 {
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .custom-text-cl4 {
+      color: rgba(0, 132, 255, 1)
+    }
+
+    .background-id_0m20 .custom-border-cl1 {
+      border-color: rgba(0, 0, 0, 1);
+      background-color: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .custom-border-cl2 {
+      border-color: rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .custom-border-cl3 {
+      border-color: rgba(64, 19, 105, 1);
+      background-color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .custom-border-cl4 {
+      border-color: rgba(0, 132, 255, 1);
+      background-color: rgba(0, 132, 255, 1)
+    }
+
+    .background-id_0m20 .button-primary {
+      background-color: rgba(64, 19, 105, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-primary:focus,
+    .background-id_0m20 .button-primary:hover {
+      background-color: rgba(90, 26, 148, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-primary.button-background,
+    .background-id_0m20 .button-primary.button-card {
+      background-color: rgba(64, 19, 105, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-primary.button-card:focus,
+    .background-id_0m20 .button-primary.button-card:hover {
+      background-color: rgba(90, 26, 148, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-primary.button-background:focus,
+    .background-id_0m20 .button-primary.button-background:hover {
+      background-color: rgba(90, 26, 148, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-secondary {
+      background-color: rgba(0, 132, 255, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-secondary:focus,
+    .background-id_0m20 .button-secondary:hover {
+      background-color: rgba(50, 156, 255, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-secondary.button-background,
+    .background-id_0m20 .button-secondary.button-card {
+      background-color: rgba(0, 132, 255, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-secondary.button-card:focus,
+    .background-id_0m20 .button-secondary.button-card:hover {
+      background-color: rgba(50, 156, 255, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-tertiary,
+    .background-id_0m20 .button-tertiary:focus,
+    .background-id_0m20 .button-tertiary:hover {
+      background-color: rgba(255, 255, 255, 1);
+      color: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .button-secondary.button-background:focus,
+    .background-id_0m20 .button-secondary.button-background:hover {
+      background-color: rgba(50, 156, 255, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-tertiary.button-card {
+      background-color: rgba(0, 0, 0, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-tertiary.button-card:focus,
+    .background-id_0m20 .button-tertiary.button-card:hover {
+      background-color: rgba(25, 25, 25, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-tertiary.button-background,
+    .background-id_0m20 .button-tertiary.button-background:focus,
+    .background-id_0m20 .button-tertiary.button-background:hover {
+      background-color: rgba(255, 255, 255, 1);
+      color: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .button-quaternary {
+      background-color: rgba(64, 19, 105, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-quaternary:focus,
+    .background-id_0m20 .button-quaternary:hover {
+      background-color: rgba(90, 26, 148, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-quaternary.button-card,
+    .background-id_808080m16.lahuni82 .menu-open nav ul li a::after,
+    .background-id_808080m16.lahuni82 .no-cover.menu-open .kv-scrolled nav ul li a::after {
+      background-color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-quaternary.button-card {
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-quaternary.button-card:focus,
+    .background-id_0m20 .button-quaternary.button-card:hover {
+      background-color: rgba(90, 26, 148, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-quaternary.button-background {
+      background-color: rgba(64, 19, 105, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0adjacent.bajigu78 .subfooter,
+    .background-id_808080m16.lahuni82 .has-cover .navigation-position.kv-check-scroll.kv-scrolled {
+      background-color: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .button-quaternary.button-background:focus,
+    .background-id_0m20 .button-quaternary.button-background:hover {
+      background-color: rgba(90, 26, 148, 1);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-primary {
+      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-primary:focus,
+    .background-id_0m20 .button-ghost-primary:hover {
+      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-primary.button-card {
+      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-primary.button-card:focus,
+    .background-id_0m20 .button-ghost-primary.button-card:hover {
+      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-primary.button-background {
+      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-primary.button-background:focus,
+    .background-id_0m20 .button-ghost-primary.button-background:hover {
+      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-secondary {
+      box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-secondary:focus,
+    .background-id_0m20 .button-ghost-secondary:hover {
+      box-shadow: inset 0 0 0 4px rgba(0, 132, 255, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-secondary.button-card {
+      box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-secondary.button-card:focus,
+    .background-id_0m20 .button-ghost-secondary.button-card:hover {
+      box-shadow: inset 0 0 0 4px rgba(0, 132, 255, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-secondary.button-background {
+      box-shadow: inset 0 0 0 2px rgba(0, 132, 255, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-secondary.button-background:focus,
+    .background-id_0m20 .button-ghost-secondary.button-background:hover {
+      box-shadow: inset 0 0 0 4px rgba(0, 132, 255, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-tertiary {
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-tertiary:focus,
+    .background-id_0m20 .button-ghost-tertiary:hover {
+      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-tertiary.button-card {
+      box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-tertiary.button-card:focus,
+    .background-id_0m20 .button-ghost-tertiary.button-card:hover {
+      box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-tertiary.button-background {
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-tertiary.button-background:focus,
+    .background-id_0m20 .button-ghost-tertiary.button-background:hover {
+      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-quaternary {
+      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-quaternary:focus,
+    .background-id_0m20 .button-ghost-quaternary:hover {
+      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-quaternary.button-card {
+      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-quaternary.button-card:focus,
+    .background-id_0m20 .button-ghost-quaternary.button-card:hover {
+      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .button-ghost-quaternary.button-background {
+      box-shadow: inset 0 0 0 2px rgba(64, 19, 105, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-quaternary.button-background:focus,
+    .background-id_0m20 .button-ghost-quaternary.button-background:hover {
+      box-shadow: inset 0 0 0 4px rgba(64, 19, 105, 1);
+      color: rgba(81, 171, 255, 1)
+    }
+
+    .background-id_0m20 .color-stroke.text2 {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      stroke: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 a {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 a:hover {
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      background-color: rgba(255, 255, 255, .1)
+    }
+
+    .background-id_0m20 a:focus {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      outline-color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .kv-main a {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .kv-main a:hover {
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      background-color: rgba(255, 255, 255, .1)
+    }
+
+    .background-id_0m20 .kv-main a:focus {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      outline-color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .kv-main .card a,
+    .background-id_0m20 .kv-main .content-card a,
+    .background-id_0m20 .kv-main .default-card a,
+    .background-id_0m20 .kv-main .item-card a {
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .kv-main .card a:hover,
+    .background-id_0m20 .kv-main .content-card a:hover,
+    .background-id_0m20 .kv-main .default-card a:hover,
+    .background-id_0m20 .kv-main .item-card a:hover {
+      color: rgba(37, 11, 61, 1)
+    }
+
+    .background-id_0.coqevu92 .l-item .progress-wrapper p,
+    .background-id_808080m16.lahuni82 .menu-open nav ul li a.active,
+    .background-id_808080m16.lahuni82 .no-cover.menu-open .kv-scrolled nav ul li a.active {
+      color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .default-card {
+      background-color: rgba(255, 255, 255, 1);
+      color: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper {
+      background-color: rgba(0, 0, 0, 1);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .button-ghost-primary.button-background,
+    .background-id_0m20 .button-ghost-primary.button-background:focus,
+    .background-id_0m20 .button-ghost-primary.button-background:hover,
+    .background-id_0m20 .button-ghost-primary.button-card,
+    .background-id_0m20 .button-ghost-primary.button-card:focus,
+    .background-id_0m20 .button-ghost-primary.button-card:hover,
+    .background-id_0m20 .button-ghost-quaternary.button-background,
+    .background-id_0m20 .button-ghost-quaternary.button-background:focus,
+    .background-id_0m20 .button-ghost-quaternary.button-background:hover,
+    .background-id_0m20 .button-ghost-quaternary.button-card,
+    .background-id_0m20 .button-ghost-quaternary.button-card:focus,
+    .background-id_0m20 .button-ghost-quaternary.button-card:hover,
+    .background-id_0m20 .button-ghost-secondary.button-background,
+    .background-id_0m20 .button-ghost-secondary.button-background:focus,
+    .background-id_0m20 .button-ghost-secondary.button-background:hover,
+    .background-id_0m20 .button-ghost-secondary.button-card,
+    .background-id_0m20 .button-ghost-secondary.button-card:focus,
+    .background-id_0m20 .button-ghost-secondary.button-card:hover,
+    .background-id_0m20 .button-ghost-tertiary.button-background,
+    .background-id_0m20 .button-ghost-tertiary.button-background:focus,
+    .background-id_0m20 .button-ghost-tertiary.button-background:hover,
+    .background-id_0m20 .button-ghost-tertiary.button-card,
+    .background-id_0m20 .button-ghost-tertiary.button-card:focus,
+    .background-id_0m20 .button-ghost-tertiary.button-card:hover,
+    .background-id_0m20 .button-primary,
+    .background-id_0m20 .button-primary.button-background,
+    .background-id_0m20 .button-primary.button-background:focus,
+    .background-id_0m20 .button-primary.button-background:hover,
+    .background-id_0m20 .button-primary.button-card,
+    .background-id_0m20 .button-primary.button-card:focus,
+    .background-id_0m20 .button-primary.button-card:hover,
+    .background-id_0m20 .button-primary:focus,
+    .background-id_0m20 .button-primary:hover,
+    .background-id_0m20 .button-quaternary,
+    .background-id_0m20 .button-quaternary.button-background,
+    .background-id_0m20 .button-quaternary.button-background:focus,
+    .background-id_0m20 .button-quaternary.button-background:hover,
+    .background-id_0m20 .button-quaternary.button-card,
+    .background-id_0m20 .button-quaternary.button-card:focus,
+    .background-id_0m20 .button-quaternary.button-card:hover,
+    .background-id_0m20 .button-quaternary:focus,
+    .background-id_0m20 .button-quaternary:hover,
+    .background-id_0m20 .button-secondary,
+    .background-id_0m20 .button-secondary.button-background,
+    .background-id_0m20 .button-secondary.button-background:focus,
+    .background-id_0m20 .button-secondary.button-background:hover,
+    .background-id_0m20 .button-secondary.button-card,
+    .background-id_0m20 .button-secondary.button-card:focus,
+    .background-id_0m20 .button-secondary.button-card:hover,
+    .background-id_0m20 .button-secondary:focus,
+    .background-id_0m20 .button-secondary:hover,
+    .background-id_0m20 .button-tertiary,
+    .background-id_0m20 .button-tertiary.button-background,
+    .background-id_0m20 .button-tertiary.button-background:focus,
+    .background-id_0m20 .button-tertiary.button-background:hover,
+    .background-id_0m20 .button-tertiary.button-card,
+    .background-id_0m20 .button-tertiary.button-card:focus,
+    .background-id_0m20 .button-tertiary.button-card:hover,
+    .background-id_0m20 .button-tertiary:focus,
+    .background-id_0m20 .button-tertiary:hover,
+    .background-id_0m20 .default-card,
+    .background-id_0m20 .kv-main .card a,
+    .background-id_0m20 .kv-main .card a:hover,
+    .background-id_0m20 .kv-main .content-card a,
+    .background-id_0m20 .kv-main .content-card a:hover,
+    .background-id_0m20 .kv-main .default-card a,
+    .background-id_0m20 .kv-main .default-card a:hover,
+    .background-id_0m20 .kv-main .item-card a,
+    .background-id_0m20 .kv-main .item-card a:hover,
+    .background-id_0m20 .section-description.on_accent1,
+    .background-id_0m20 .section-description.on_accent2,
+    .background-id_0m20 .section-description.on_background,
+    .background-id_0m20 .section-description.on_card,
+    .background-id_0m20 .section-subtitle.on_accent1,
+    .background-id_0m20 .section-subtitle.on_accent2,
+    .background-id_0m20 .section-subtitle.on_background,
+    .background-id_0m20 .section-subtitle.on_card,
+    .background-id_0m20 .section-title.on_accent1,
+    .background-id_0m20 .section-title.on_accent2,
+    .background-id_0m20 .section-title.on_background,
+    .background-id_0m20 .section-title.on_card,
+    .lahuni82 .kv-scrolled .site-title-link {
+      text-shadow: none
+    }
+
+    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper .select-box-dropdown-container {
+      background: rgba(0, 0, 0, 1)
+    }
+
+    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper .select-box-dropdown-container li.ee-active-element,
+    .background-id_0m20 .ee-select-box .ee-select-box-innerwrapper .select-box-dropdown-container li:hover {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
+      background-color: rgba(255, 255, 255, .08)
+    }
+
+    .background-id_0m20 .kv-image-border-primary {
+      border-color: rgba(64, 19, 105, 1)
+    }
+
+    .background-id_0m20 .kv-image-border-secondary {
+      border-color: rgba(0, 132, 255, 1)
+    }
+
+    .background-id_0m20 .kv-image-border-tertiary {
+      border-color: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0m20 .kv-image-border-quarternary {
+      border-color: rgba(64, 19, 105, 1)
     }
 
     .lahuni82 .button-callToAction {
@@ -6202,10 +6214,6 @@
       text-shadow: none;
       text-decoration: none !important;
       font-size: 2rem
-    }
-
-    .lahuni82 .kv-scrolled .site-title-link {
-      text-shadow: none
     }
 
     .lahuni82 .no-cover .navigation-position {
@@ -6577,10 +6585,6 @@
       min-height: 100vh !important
     }
 
-    .lahuni82 .mobile .cstm-fnt {
-      font-size: 100% !important
-    }
-
     .lahuni82 .mobile .logo-small .logo-image {
       max-height: calc(2.5rem * 1.5)
     }
@@ -6605,15 +6609,18 @@
       max-height: calc(5.5rem * 1.5)
     }
 
-    .lahuni82 .kv-scrolled .logo-small .logo-image {
+    .lahuni82 .kv-scrolled .logo-small .logo-image,
+    .lahuni82 .no-cover .logo-small .logo-image {
       max-height: 2.5rem
     }
 
-    .lahuni82 .kv-scrolled .logo-medium .logo-image {
+    .lahuni82 .kv-scrolled .logo-medium .logo-image,
+    .lahuni82 .no-cover .logo-medium .logo-image {
       max-height: 3.25rem
     }
 
-    .lahuni82 .kv-scrolled .logo-large .logo-image {
+    .lahuni82 .kv-scrolled .logo-large .logo-image,
+    .lahuni82 .no-cover .logo-large .logo-image {
       max-height: 3.75rem
     }
 
@@ -6629,14 +6636,6 @@
     .background-id_808080m16.lahuni82 .no-cover .kv-scrolled .site-title-link {
       text-shadow: 0 1px 3px rgba(0, 0, 0, .364);
       color: rgba(255, 255, 255, 1)
-    }
-
-    .background-id_0.coqevu92 .l-item .progress-wrapper p,
-    .background-id_0.nifuno15 .social .social-link:focus,
-    .background-id_0.nifuno15 .social .social-link:hover,
-    .background-id_808080m16.lahuni82 .menu-open nav ul li a.active,
-    .background-id_808080m16.lahuni82 .no-cover.menu-open .kv-scrolled nav ul li a.active {
-      color: rgba(64, 19, 105, 1)
     }
 
     .background-id_808080m16.lahuni82 .navigation-position.kv-check-scroll.kv-scrolled .navigation nav ul li.phone-link a::before {
@@ -6748,6 +6747,101 @@
     .background-id_808080m16.lahuni82 .no-cover.menu-open .kv-scrolled nav ul li a.active,
     .background-id_808080m16.lahuni82 .no-cover.menu-open .kv-scrolled nav ul li a::after {
       text-shadow: none
+    }
+
+    .qobusy09 .main-content {
+      order: 0
+    }
+
+    .qobusy09 .row {
+      justify-content: space-around
+    }
+
+    .qobusy09 .side-content {
+      text-align: right;
+      display: flex;
+      position: relative
+    }
+
+    .qobusy09 .side-content:after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      right: 0
+    }
+
+    .qobusy09 .side-content.right:after {
+      left: 0
+    }
+
+    .qobusy09 .section-subtitle {
+      position: relative;
+      margin-top: 0 !important;
+      margin-bottom: 1rem !important;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: .02em
+    }
+
+    @media (min-width:768px) {
+      .qobusy09 .side-content {
+        display: block;
+        padding-right: 1.5rem
+      }
+
+      .qobusy09 .section-subtitle {
+        margin-top: 1.3125rem !important;
+        margin-bottom: 0 !important;
+        order: 1
+      }
+
+      .qobusy09 .line {
+        width: 1px;
+        height: calc(100% - 6.8125rem);
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 1.5rem;
+        order: 2
+      }
+    }
+
+    .qobusy09 .section-title {
+      margin-bottom: 1.5rem
+    }
+
+    .qobusy09 .section-description {
+      line-height: 1.75rem
+    }
+
+    .qobusy09 .align-left {
+      text-align: left
+    }
+
+    .qobusy09 .align-center {
+      text-align: center;
+      margin: 0 auto
+    }
+
+    .qobusy09 .align-right {
+      text-align: right
+    }
+
+    .qobusy09 .button {
+      margin-right: 1rem
+    }
+
+    .background-id_0.qobusy09 .side-content::after {
+      text-shadow: none;
+      background-color: rgba(255, 255, 255, .1)
+    }
+
+    .background-id_0.qobusy09 .section-subtitle {
+      text-shadow: none;
+      color: rgba(255, 255, 255, .6)
     }
 
     .tixoru73 .section-text {
@@ -6976,23 +7070,28 @@
       }
     }
 
-    .background-id_0.nifuno15 .description {
+    .background-id_0adjacent.nifuno15 .description {
       text-shadow: none;
       color: rgba(255, 255, 255, .75)
     }
 
-    .background-id_0.nifuno15 .social .social-link {
+    .background-id_0adjacent.nifuno15 .social .social-link {
       text-shadow: none;
       color: rgba(81, 171, 255, 1)
     }
 
-    .background-id_0.nifuno15 .social .social-link::after {
-      background-color: rgba(64, 19, 105, .12)
+    .background-id_0adjacent.nifuno15 .social .social-link::after {
+      background-color: rgba(0, 132, 255, .12)
     }
 
-    .background-id_0.nifuno15 .social .social-link svg {
+    .background-id_0adjacent.nifuno15 .social .social-link svg {
       text-shadow: none;
       fill: rgba(255, 255, 255, 1)
+    }
+
+    .background-id_0adjacent.nifuno15 .social .social-link:focus,
+    .background-id_0adjacent.nifuno15 .social .social-link:hover {
+      color: rgba(0, 132, 255, 1)
     }
 
     .gadege31 .kv-notify-inview {
@@ -7449,13 +7548,13 @@
       fill: rgba(255, 255, 255, 1)
     }
   </style>
-  <script type="application/javascript" src="inicio.6988eb28.js"></script>
+  <script type="application/javascript" src="/inicio.580414b3.js"></script>
 </head>
 
 <body>
   <div>
     <div class="kv-site kv-main" tabindex="-1">
-      <a href="index.html#ada-tab-anchor" class="skip-link" data-tag="ada-skip-link"></a>
+      <a href="#ada-tab-anchor" class="skip-link" data-tag="ada-skip-link"></a>
       <div class="kv-control-placeholder kv-_site" data-kv-control="0"></div>
       <content class="kv-page" name="page-inicio">
         <div class="kv-page-content">
@@ -7488,20 +7587,19 @@
                         <div data-type="logo" data-property="global.logo" class="logo-small">
                           <img class="logo-image "
                             src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-hostgator_brasil-v1-0-6%2F076%2F116076%2FbFnlz8lO%2Feaaa8e37bc40427d902b31f966e54e1f&amp;methods=resize%2C500%2C5000">
-                          <a href="index.html" data-href="/"
+                          <a href="/" data-href="/"
                             style="width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0;z-index: 1"></a>
                         </div>
-                        <a href="index.html" data-href="/" class="fit-text site-title-link">
+                        <a href="/" data-href="/" class="fit-text site-title-link">
                           <span class="logo" data-type="text" tabindex="0">k3rnel<span data-prop="global.title"
                               class="ck-editable-element" data-editable="basic" style="display:none;"></span></span>
                         </a>
                       </div>
                       <nav>
                         <ul class="menu menu-item-wrapper" data-dynamic-navigation-element="nav">
-                          <li><a href="index.html" data-uri-path="/" target="_self" class="active">Início</a></li>
-                          <li><a href="sobre.html" data-uri-path="/sobre" target="_self">Sobre</a></li>
-                          <li><a href="contate-nos.html" data-uri-path="/contate-nos" target="_self">Contate-nos</a>
-                          </li>
+                          <li><a href="/" data-uri-path="/" target="_self" class="active">Início</a></li>
+                          <li><a href="/sobre" data-uri-path="/sobre" target="_self">Sobre</a></li>
+                          <li><a href="/contate-nos" data-uri-path="/contate-nos" target="_self">Contate-nos</a></li>
                         </ul>
                         <div class="callbutton" data-dynamic-navigation-element="calltoactionbutton">
                           <div class="custom-header-buttons">
@@ -7566,8 +7664,8 @@
           </section>
 
           <div class="kv-control-placeholder kv-_page" data-kv-control="1"></div>
-          <section class="background-id_0 tixoru73 nifuno15 undefined undefined" style=" position:relative;">
-            <a name="section2"></a>
+          <section class="background-id_0 qobusy09 undefined" style=" position:relative;">
+            <a name="section864"></a>
             <div class="kv-control-placeholder kv-_section" data-kv-control="background"></div>
             <div class="kv-background " style=" background-color: rgb(0,0,0);">
 
@@ -7576,6 +7674,55 @@
     
     
     background-color: rgb(0,0,0);
+    "></div>
+
+            </div>
+
+            <div class="position-relative kv-content">
+              <div class="kv-control-placeholder kv-_section" data-kv-control="content"></div>
+              <div class="section section--lg align-left">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-9 col-lg-6 kv-notify-inview section-text main-content">
+                      <h2 class="section-title section-title--md" data-type="text" tabindex="0">Encerramento de
+                        atividades<span data-prop="title" class="ck-editable-element" data-editable="basic"
+                          style="display:none;"></span></h2>
+                      <p class="description" style="font-size:12px;color:#51abff" data-type="text" tabindex="0">
+                        Pronuncionamento oficial.<span data-prop="description" class="ck-editable-element"
+                          data-editable="basic" style="display:none;"></span></p>
+                      <p class="description" data-type="text" tabindex="0">A k3rnel está encerrando suas atividades, o
+                        que acontecera no dia 11/10. Tivemos uma breve estadia, porem assim como o Snapchat e qualquer
+                        rede social que a Google tenha criado (ou pelo menos tentado), morremos prematuramente.<span
+                          data-prop="description" class="ck-editable-element" data-editable="basic"
+                          style="display:none;"></span></p>
+                      <p class="description" data-type="text" style="text-align:right;" tabindex="0">- J, Mateus<span
+                          data-prop="description" class="ck-editable-element" data-editable="basic"
+                          style="display:none;"></span></p>
+
+                    </div>
+                    <div class="col-md-3 side-content right">
+                      <p class="section-subtitle overline title--xs" data-type="text" tabindex="0">Nunca deixe ALGUÉM te
+                        dizer que VOCÊ não consegue, diga VOCÊ mesmo:<br><b><u> "Eu não consigo"</u></b><span
+                          data-prop="subtitle" class="ck-editable-element" data-editable="basic"
+                          style="display:none;"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="kv-control-placeholder kv-_page" data-kv-control="2"></div>
+          <section class="background-id_0adjacent tixoru73 nifuno15 undefined undefined" style=" position:relative;">
+            <a name="section2"></a>
+            <div class="kv-control-placeholder kv-_section" data-kv-control="background"></div>
+            <div class="kv-background " style=" background-color: rgb(12,12,12);">
+
+              <div class="kv-background-inner " style="
+    
+    
+    
+    background-color: rgb(12,12,12);
     "></div>
 
             </div>
@@ -7715,7 +7862,7 @@
             </div>
           </section>
 
-          <div class="kv-control-placeholder kv-_page" data-kv-control="2"></div>
+          <div class="kv-control-placeholder kv-_page" data-kv-control="3"></div>
           <section class="background-id_0m20 gadege31 undefined" style=" position:relative;">
             <a name="section798"></a>
             <div class="kv-control-placeholder kv-_section" data-kv-control="background"></div>
@@ -7769,7 +7916,7 @@
             </div>
           </section>
 
-          <div class="kv-control-placeholder kv-_page" data-kv-control="3"></div>
+          <div class="kv-control-placeholder kv-_page" data-kv-control="4"></div>
           <section class="background-id_0 hodego80 coqevu92" style=" position:relative;">
             <a name="section92"></a>
             <div class="kv-control-placeholder kv-_section" data-kv-control="background"></div>
@@ -7932,7 +8079,7 @@
             </div>
           </section>
 
-          <div class="kv-control-placeholder kv-_page" data-kv-control="4"></div>
+          <div class="kv-control-placeholder kv-_page" data-kv-control="5"></div>
           <section class="background-id_0adjacent bajigu78" style=" position:relative;">
             <a name="section1"></a>
             <div class="kv-control-placeholder kv-_section" data-kv-control="background"></div>
@@ -7956,7 +8103,7 @@
                       <div data-type="logo" data-property="global.logo" class="logo-small">
                         <img class="logo-image loader"
                           src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-hostgator_brasil-v1-0-6%2F076%2F116076%2FbFnlz8lO%2Feaaa8e37bc40427d902b31f966e54e1f&amp;methods=resize%2C1000%2C5000">
-                        <a href="index.html" data-href="/"
+                        <a href="/" data-href="/"
                           style="width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0;z-index: 1"></a>
                       </div>
 
@@ -7964,13 +8111,13 @@
                     <nav>
                       <ul>
                         <li>
-                          <a href="index.html" data-uri-path="/" class="opaque active">Início</a>
+                          <a href="/" data-uri-path="/" class="opaque active">Início</a>
                         </li>
                         <li>
-                          <a href="sobre.html" data-uri-path="/sobre" class="opaque ">Sobre</a>
+                          <a href="/sobre" data-uri-path="/sobre" class="opaque ">Sobre</a>
                         </li>
                         <li>
-                          <a href="contate-nos.html" data-uri-path="/contate-nos" class="opaque ">Contate-nos</a>
+                          <a href="/contate-nos" data-uri-path="/contate-nos" class="opaque ">Contate-nos</a>
                         </li>
                       </ul>
                     </nav>
@@ -7989,7 +8136,7 @@
                     <div class="row">
                       <div class="content-left legal">
                         <p><span data-type="copyright">© 2020 k3rnel</span></p>
-                        <a href="sitemap.xml" target="_blank">Mapa do site</a>
+                        <a href="/sitemap.xml" target="_blank">Mapa do site</a>
                         <div class="legal-placeholder"></div>
                       </div>
                     </div>
@@ -8045,8 +8192,8 @@
     </div>
   </div>
   <script type="text/javascript"
-    src="https://runtime.builderservices.io/runtime-endurance-14901/9e63a0a2317cf55c6065.bundle.js"></script>
-  <script type="text/javascript" src="https://runtime.builderservices.io/runtime-endurance-14901/bundle.js"></script>
+    src="https://runtime.builderservices.io/runtime-endurance-15159/9e63a0a2317cf55c6065.bundle.js"></script>
+  <script type="text/javascript" src="https://runtime.builderservices.io/runtime-endurance-15159/bundle.js"></script>
 
   <script type="text/javascript">
     window._isPublished = true;
@@ -8214,6 +8361,91 @@
         "id": "inicio",
         "title": "Início",
         "sections": [{
+          "id": 864,
+          "layout": {
+            "section": {
+              "id": "qobusy09"
+            },
+            "sectionAlign": "right"
+          },
+          "category": "text",
+          "binding": {
+            "title": "Encerramento de atividades",
+            "subtitle": "Nunca deixe ALGUÉM te dizer que VOCÊ não consegue, diga VOCÊ mesmo:<br><b><u> \"Eu não consigo\"</u></b>",
+            "description": "A k3rnel está encerrando suas atividades, o que acontecera no dia 10/11. Tivemos uma breve estadia, porem assim como o Snapchat e qualquer rede social que a Google tenha criado (ou pelo menos tentado), morremos prematuramente.<br>- J, Mateus<br>",
+            "buttons": [{
+              "href": "page:contate-nos",
+              "id": "01",
+              "linkType": "page",
+              "styles": {
+                "background": "",
+                "border": ""
+              },
+              "background": "",
+              "border": "",
+              "title": "Leia mais",
+              "buttonClass": "button-ghost-",
+              "colorClass": "primary"
+            }],
+            "icon": {
+              "value": ""
+            },
+            "list": [{
+              "title": "Adicione um título",
+              "description": "Você pode usar este elemento para explicar aos visitantes o que você faz ou para informá-los sobre outros assuntos. Por exemplo, sobre qual é sua paixão ou o que a empresa oferece, como produtos e serviços. Você pode ocultar este elemento no menu ...",
+              "button": {
+                "href": "page:contate-nos",
+                "linkType": "page",
+                "styles": {
+                  "background": "",
+                  "border": ""
+                },
+                "background": "",
+                "border": "",
+                "title": "Leia mais"
+              }
+            }, {
+              "title": "Adicione um título",
+              "description": "Você pode usar este elemento para explicar aos visitantes o que você faz ou para informá-los sobre outros assuntos. Por exemplo, sobre qual é sua paixão ou o que a empresa oferece, como produtos e serviços. Você pode ocultar este elemento no menu ...",
+              "button": {
+                "href": "page:contate-nos",
+                "linkType": "page",
+                "styles": {
+                  "background": "",
+                  "border": ""
+                },
+                "background": "",
+                "border": "",
+                "title": "Leia mais"
+              }
+            }],
+            "image": {
+              "value": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU1MTN9",
+              "altText": "monitor showing Java programming",
+              "originalSize": {
+                "width": 3543,
+                "height": 2365
+              },
+              "authorUsername": "ilyapavlov",
+              "authorName": "Ilya Pavlov"
+            },
+            "_placeholders": {
+              "subtitle": "Conte mais aos visitantes sobre o que você faz",
+              "description": "Você pode usar esta seção para explicar mais sobre sua paixão ou o que sua empresa tem a oferecer.<br>Você pode ocultar elementos desta seção com os botões à direita."
+            },
+            "_toggle": {
+              "title": true,
+              "subtitle": true,
+              "description": true,
+              "buttons": false
+            },
+            "sectionSize": "section--lg",
+            "contentAlignment": "align-left",
+            "background": {
+              "colorIndex": 0
+            }
+          }
+        }, {
           "id": 2,
           "layout": {
             "section": {

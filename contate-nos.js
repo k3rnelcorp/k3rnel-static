@@ -245,26 +245,38 @@ function n(a, s, c) {
                     t && t.classList.add("show"), this.setButtonState(e.querySelector(".button.submit"), this.builderApi.localize("editorTemplates.features.subscription.sent")), e.classList.add(this.promoCodeClass)
                 }
             }, {
+                key: "handlePreview",
+                value: function (e) {
+                    var t = e.querySelector(".form-container") || e;
+                    if (t) {
+                        var i = document && document.createElement("div");
+                        i.className = "preview-form-container", i.innerHTML = this.builderApi.localize("editorTemplates.features.form.preview.message"), t.appendChild(i)
+                    }
+                }
+            }, {
                 key: "submitForm",
                 value: function (e, r, t, o, i, n) {
                     var a = this,
-                        s = 5 < arguments.length && void 0 !== n ? n : {},
-                        c = window._site && window._site.siteId || "",
+                        s = 5 < arguments.length && void 0 !== n ? n : {};
+                    if (!this.editor && window.self !== window.top) return this.setButtonState(o.target, this.builderApi.localize("editorTemplates.features.form.preview.button")), void this.handlePreview(r);
+                    var c = window._site && window._site.siteId || "",
                         u = "/v1.0/contactform";
                     100 <= (window._site && window._site.partnerId || 0) && (u = "dev" === i.env.env || "latest" === i.env.env ? "https://hostingapi.latest.mywebsitebuilder.com" + u : "qa" === i.env.env ? "https://hostingapi.qa.mywebsitebuilder.com" + u : "uat" === i.env.env ? "https://hostingapi.uat.mywebsitebuilder.com" + u : "https://hostingapi.mywebsitebuilder.com" + u);
                     var l = r.querySelector("form"),
                         d = r.querySelector(".hidden-form-data").dataset.sectionid,
-                        f = {
+                        f = !!r.querySelector('[data-type="subscribe"]'),
+                        p = !!r.querySelector('[data-type="promotion"]'),
+                        h = {
                             fields: e,
                             site_id: c,
                             recaptcha_code: t,
                             section_id: d,
                             form_id: d,
-                            is_subscription: !!r.querySelector('[data-type="subscribe"]')
+                            is_subscription: f || p
                         };
                     this.setButtonState(o.target, this.builderApi.localize("editorTemplates.features.subscription.sending")), i.fetch(u, {
                         method: "POST",
-                        body: JSON.stringify(f),
+                        body: JSON.stringify(h),
                         headers: {
                             "Content-Type": "application/json"
                         }
